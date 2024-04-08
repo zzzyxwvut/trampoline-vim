@@ -3,8 +3,8 @@ vim9script
 # Description:	Express control transfers of tail-recursive function calls in
 #		terms of iteration
 # Porter:	Aliaksei Budavei (0x000c70 AT gmail DOT com)
-# Repository:	https://github.com/zzzyxwvut/trampoline-vim.git [vim/9000000/master]
-# Version:	2.0
+# Repository:	https://github.com/zzzyxwvut/trampoline-vim.git [vim/9001556/master]
+# Version:	3.0
 # Last Change:	2024-Apr-08
 # Copyleft ())
 
@@ -45,7 +45,6 @@ export def Land(result: any): dict<any>
 
 	def Bounce_(_: dict<any>): dict<any>
 		throw 'Unsupported operation'
-		return {}
 	enddef
 
 	def Land_(r: any): any
